@@ -1,5 +1,4 @@
-# health-insurance-ml
-Machine learning project to predict health insurance premiums based on customer demographics, lifestyle, and health-related features.
+
 # Insurance Premium Prediction
 
 A machine learning project that predicts a customer's insurance premium based on demographic, financial, lifestyle, and medical information.
