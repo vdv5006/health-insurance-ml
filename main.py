@@ -113,7 +113,7 @@ with col1:
 with col2:
     insurance_plan = st.selectbox(
         "Insurance Plan",
-        [1, 2, 3]
+        ["Bronze", "Silver", "Gold"]
     )
 
 with col3:
@@ -137,6 +137,12 @@ with col1:
 
 if predict_clicked:
 
+    insurance_plan_mapping = {
+        "Bronze": 1,
+        "Silver": 2,
+        "Gold": 3
+    }
+
     input_dict = {
         "age": age,
         "gender": gender,
@@ -148,7 +154,7 @@ if predict_clicked:
         "employment_status": employment_status,
         "income_lakhs": income_lakhs,
         "medical_history": medical_history,
-        "insurance_plan": insurance_plan,
+        "insurance_plan": insurance_plan_mapping[insurance_plan],
         "genetical_risk": genetical_risk
     }
 
